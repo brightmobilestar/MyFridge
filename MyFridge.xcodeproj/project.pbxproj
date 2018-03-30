@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55CCACB58C96833BA46F16E3 /* Pods_MyFridgeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F73E0FD388FE1083045DBC /* Pods_MyFridgeUITests.framework */; };
+		8EECC27EAA8623775788D808 /* Pods_MyFridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0770DB8BE034CA735CCF912 /* Pods_MyFridge.framework */; };
+		C3085F0E206845790007E2AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F0D206845790007E2AF /* AppDelegate.swift */; };
+		C3085F10206845790007E2AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F0F206845790007E2AF /* ViewController.swift */; };
+		C3085F13206845790007E2AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3085F11206845790007E2AF /* Main.storyboard */; };
+		C3085F15206845790007E2AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3085F14206845790007E2AF /* Assets.xcassets */; };
+		C3085F18206845790007E2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3085F16206845790007E2AF /* LaunchScreen.storyboard */; };
+		C3085F23206845790007E2AF /* MyFridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F22206845790007E2AF /* MyFridgeTests.swift */; };
+		C3085F2E206845790007E2AF /* MyFridgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F2D206845790007E2AF /* MyFridgeUITests.swift */; };
+		C3085F3E206866580007E2AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3085F3D206866570007E2AF /* GoogleService-Info.plist */; };
+		C3085F472068C61D0007E2AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F462068C61D0007E2AF /* LoginViewController.swift */; };
+		C3085F492068C62C0007E2AF /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F482068C62C0007E2AF /* SignupViewController.swift */; };
+		C3085F4B2068C6C70007E2AF /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F4A2068C6C70007E2AF /* TabbarViewController.swift */; };
+		C3085F4D2068C6E00007E2AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F4C2068C6E00007E2AF /* HomeViewController.swift */; };
+		C3085F532068C7470007E2AF /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F522068C7470007E2AF /* IngredientsViewController.swift */; };
+		C3085F552068C75D0007E2AF /* MyRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F542068C75D0007E2AF /* MyRecipesViewController.swift */; };
+		C3085F572068C76D0007E2AF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F562068C76D0007E2AF /* SearchViewController.swift */; };
+		C3085F5A2068CBCF0007E2AF /* NewIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F592068CBCF0007E2AF /* NewIngredientViewController.swift */; };
+		C3085F5C2068CC8C0007E2AF /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F5B2068CC8C0007E2AF /* NewRecipeViewController.swift */; };
+		C3085F5E2068CDEC0007E2AF /* LoginNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F5D2068CDEC0007E2AF /* LoginNavController.swift */; };
+		C3085F602068CEAB0007E2AF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3085F5F2068CEAB0007E2AF /* AboutViewController.swift */; };
+		C3085F632068DC540007E2AF /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = C3085F622068DC540007E2AF /* noimage.png */; };
+		C33A1DCB206CC04300FA8B6D /* icon_200.png in Resources */ = {isa = PBXBuildFile; fileRef = C33A1DC9206CC03D00FA8B6D /* icon_200.png */; };
+		C33A1DCC206CC04300FA8B6D /* icon_40.png in Resources */ = {isa = PBXBuildFile; fileRef = C33A1DCA206CC03E00FA8B6D /* icon_40.png */; };
+		C38DD5802068F1C200F3B40C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DD57F2068F1C100F3B40C /* AuthService.swift */; };
+		C38DD5822068F81700F3B40C /* IngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DD5812068F81700F3B40C /* IngredientModel.swift */; };
+		C38DD5842068F83400F3B40C /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DD5832068F83400F3B40C /* RecipeModel.swift */; };
+		C38DD586206901BA00F3B40C /* SelectIngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38DD585206901BA00F3B40C /* SelectIngredientsViewController.swift */; };
+		C3D35ED8206E72CE00D85306 /* tab_about_small.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D35ED7206E72CD00D85306 /* tab_about_small.png */; };
+		C3D35EDA206E790A00D85306 /* mff_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D35ED9206E790A00D85306 /* mff_logo.png */; };
+		C3FF06E2206B7B890091C50D /* checked_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF06E0206B7B880091C50D /* checked_icon.png */; };
+		C3FF06E3206B7B890091C50D /* unchecked_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF06E1206B7B890091C50D /* unchecked_icon.png */; };
+		C3FF06E5206B80160091C50D /* delete_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF06E4206B80160091C50D /* delete_icon.png */; };
+		C3FF06E9206B91430091C50D /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF06E8206B91430091C50D /* SearchResultViewController.swift */; };
+		C3FF06ED206BD1390091C50D /* tab_recipes_small.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF06EA206BD1370091C50D /* tab_recipes_small.png */; };
+		C3FF06EE206BD1390091C50D /* tab_fridge_small.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF06EB206BD1370091C50D /* tab_fridge_small.png */; };
+		C3FF06EF206BD1390091C50D /* tab_home_small.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF06EC206BD1380091C50D /* tab_home_small.png */; };
+		C3FFAB07206A8D5C00056C0B /* GlobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FFAB06206A8D5C00056C0B /* GlobData.swift */; };
+		FBFB14C74C46C4FE8558CCC0 /* Pods_MyFridgeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AA26D46E41AAFCC0471990 /* Pods_MyFridgeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3085F1F206845790007E2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3085F02206845780007E2AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3085F09206845780007E2AF;
+			remoteInfo = MyFridge;
+		};
+		C3085F2A206845790007E2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3085F02206845780007E2AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3085F09206845780007E2AF;
+			remoteInfo = MyFridge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		398CC0B39C7CEE343BC46351 /* Pods-MyFridgeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFridgeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFridgeUITests/Pods-MyFridgeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E7232CF12D1981973402AC5 /* Pods-MyFridgeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFridgeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFridgeUITests/Pods-MyFridgeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		50DB4A4BCFBFEC045514C92B /* Pods-MyFridge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFridge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFridge/Pods-MyFridge.debug.xcconfig"; sourceTree = "<group>"; };
+		55F73E0FD388FE1083045DBC /* Pods_MyFridgeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFridgeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		772D41BBD2AE7FC55A54F610 /* Pods-MyFridgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFridgeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFridgeTests/Pods-MyFridgeTests.release.xcconfig"; sourceTree = "<group>"; };
+		87AA26D46E41AAFCC0471990 /* Pods_MyFridgeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFridgeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEF0AECB427264E7473BE44 /* Pods-MyFridge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFridge.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFridge/Pods-MyFridge.release.xcconfig"; sourceTree = "<group>"; };
+		C3085F0A206845780007E2AF /* MyFridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3085F0D206845790007E2AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3085F0F206845790007E2AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3085F12206845790007E2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3085F14206845790007E2AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3085F17206845790007E2AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3085F19206845790007E2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3085F1E206845790007E2AF /* MyFridgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFridgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3085F22206845790007E2AF /* MyFridgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeTests.swift; sourceTree = "<group>"; };
+		C3085F24206845790007E2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3085F29206845790007E2AF /* MyFridgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFridgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3085F2D206845790007E2AF /* MyFridgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeUITests.swift; sourceTree = "<group>"; };
+		C3085F2F206845790007E2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3085F3D206866570007E2AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3085F402068BAF80007E2AF /* MyFridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3085F462068C61D0007E2AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C3085F482068C62C0007E2AF /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		C3085F4A2068C6C70007E2AF /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		C3085F4C2068C6E00007E2AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C3085F522068C7470007E2AF /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
+		C3085F542068C75D0007E2AF /* MyRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipesViewController.swift; sourceTree = "<group>"; };
+		C3085F562068C76D0007E2AF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C3085F592068CBCF0007E2AF /* NewIngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIngredientViewController.swift; sourceTree = "<group>"; };
+		C3085F5B2068CC8C0007E2AF /* NewRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
+		C3085F5D2068CDEC0007E2AF /* LoginNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavController.swift; sourceTree = "<group>"; };
+		C3085F5F2068CEAB0007E2AF /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		C3085F622068DC540007E2AF /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noimage.png; sourceTree = "<group>"; };
+		C33A1DC9206CC03D00FA8B6D /* icon_200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_200.png; sourceTree = "<group>"; };
+		C33A1DCA206CC03E00FA8B6D /* icon_40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40.png; sourceTree = "<group>"; };
+		C38DD57F2068F1C100F3B40C /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C38DD5812068F81700F3B40C /* IngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientModel.swift; sourceTree = "<group>"; };
+		C38DD5832068F83400F3B40C /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		C38DD585206901BA00F3B40C /* SelectIngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectIngredientsViewController.swift; sourceTree = "<group>"; };
+		C3A7E12C2068E2A60046685D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C3D35ED7206E72CD00D85306 /* tab_about_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_about_small.png; sourceTree = "<group>"; };
+		C3D35ED9206E790A00D85306 /* mff_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mff_logo.png; sourceTree = "<group>"; };
+		C3FF06DF206A9D190091C50D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C3FF06E0206B7B880091C50D /* checked_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_icon.png; sourceTree = "<group>"; };
+		C3FF06E1206B7B890091C50D /* unchecked_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked_icon.png; sourceTree = "<group>"; };
+		C3FF06E4206B80160091C50D /* delete_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete_icon.png; sourceTree = "<group>"; };
+		C3FF06E8206B91430091C50D /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		C3FF06EA206BD1370091C50D /* tab_recipes_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_recipes_small.png; sourceTree = "<group>"; };
+		C3FF06EB206BD1370091C50D /* tab_fridge_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_fridge_small.png; sourceTree = "<group>"; };
+		C3FF06EC206BD1380091C50D /* tab_home_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_home_small.png; sourceTree = "<group>"; };
+		C3FFAB06206A8D5C00056C0B /* GlobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobData.swift; sourceTree = "<group>"; };
+		E0770DB8BE034CA735CCF912 /* Pods_MyFridge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFridge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF00FE0800A0DA5D5D0C70E9 /* Pods-MyFridgeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFridgeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFridgeTests/Pods-MyFridgeTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3085F07206845780007E2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EECC27EAA8623775788D808 /* Pods_MyFridge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3085F1B206845790007E2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFB14C74C46C4FE8558CCC0 /* Pods_MyFridgeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3085F26206845790007E2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CCACB58C96833BA46F16E3 /* Pods_MyFridgeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2498D3F2410A702F2EBBE43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50DB4A4BCFBFEC045514C92B /* Pods-MyFridge.debug.xcconfig */,
+				9EEF0AECB427264E7473BE44 /* Pods-MyFridge.release.xcconfig */,
+				EF00FE0800A0DA5D5D0C70E9 /* Pods-MyFridgeTests.debug.xcconfig */,
+				772D41BBD2AE7FC55A54F610 /* Pods-MyFridgeTests.release.xcconfig */,
+				398CC0B39C7CEE343BC46351 /* Pods-MyFridgeUITests.debug.xcconfig */,
+				3E7232CF12D1981973402AC5 /* Pods-MyFridgeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3085F01206845780007E2AF = {
+			isa = PBXGroup;
+			children = (
+				C3085F0C206845780007E2AF /* MyFridge */,
+				C3085F21206845790007E2AF /* MyFridgeTests */,
+				C3085F2C206845790007E2AF /* MyFridgeUITests */,
+				C3085F0B206845780007E2AF /* Products */,
+				A2498D3F2410A702F2EBBE43 /* Pods */,
+				FDEB0D5C932F83D2EFC1C2B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3085F0B206845780007E2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F0A206845780007E2AF /* MyFridge.app */,
+				C3085F1E206845790007E2AF /* MyFridgeTests.xctest */,
+				C3085F29206845790007E2AF /* MyFridgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3085F0C206845780007E2AF /* MyFridge */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F432068C5A10007E2AF /* ViewControllers */,
+				C38DD57E2068F1C100F3B40C /* Model */,
+				C3085F612068DC540007E2AF /* Resource */,
+				C3085F0D206845790007E2AF /* AppDelegate.swift */,
+				C3085F0F206845790007E2AF /* ViewController.swift */,
+				C3085F11206845790007E2AF /* Main.storyboard */,
+				C3085F14206845790007E2AF /* Assets.xcassets */,
+				C3085F16206845790007E2AF /* LaunchScreen.storyboard */,
+				C3085F19206845790007E2AF /* Info.plist */,
+				C3085F402068BAF80007E2AF /* MyFridge-Bridging-Header.h */,
+				C3A7E12C2068E2A60046685D /* PrefixHeader.pch */,
+				C3085F3D206866570007E2AF /* GoogleService-Info.plist */,
+				C3FF06DF206A9D190091C50D /* Constants.h */,
+			);
+			path = MyFridge;
+			sourceTree = "<group>";
+		};
+		C3085F21206845790007E2AF /* MyFridgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F22206845790007E2AF /* MyFridgeTests.swift */,
+				C3085F24206845790007E2AF /* Info.plist */,
+			);
+			path = MyFridgeTests;
+			sourceTree = "<group>";
+		};
+		C3085F2C206845790007E2AF /* MyFridgeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F2D206845790007E2AF /* MyFridgeUITests.swift */,
+				C3085F2F206845790007E2AF /* Info.plist */,
+			);
+			path = MyFridgeUITests;
+			sourceTree = "<group>";
+		};
+		C3085F432068C5A10007E2AF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F442068C5B50007E2AF /* LoginSignup */,
+				C3085F452068C5E60007E2AF /* Tabbars */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3085F442068C5B50007E2AF /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F5D2068CDEC0007E2AF /* LoginNavController.swift */,
+				C3085F462068C61D0007E2AF /* LoginViewController.swift */,
+				C3085F482068C62C0007E2AF /* SignupViewController.swift */,
+			);
+			path = LoginSignup;
+			sourceTree = "<group>";
+		};
+		C3085F452068C5E60007E2AF /* Tabbars */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F4A2068C6C70007E2AF /* TabbarViewController.swift */,
+				C3085F4C2068C6E00007E2AF /* HomeViewController.swift */,
+				C3085F5F2068CEAB0007E2AF /* AboutViewController.swift */,
+				C3FF06E6206B90F70091C50D /* Ingredients */,
+				C3FF06E7206B91100091C50D /* MyRecipes */,
+				C3085F562068C76D0007E2AF /* SearchViewController.swift */,
+			);
+			path = Tabbars;
+			sourceTree = "<group>";
+		};
+		C3085F612068DC540007E2AF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C3D35ED9206E790A00D85306 /* mff_logo.png */,
+				C33A1DCA206CC03E00FA8B6D /* icon_40.png */,
+				C33A1DC9206CC03D00FA8B6D /* icon_200.png */,
+				C3FF06EB206BD1370091C50D /* tab_fridge_small.png */,
+				C3FF06EC206BD1380091C50D /* tab_home_small.png */,
+				C3FF06EA206BD1370091C50D /* tab_recipes_small.png */,
+				C3D35ED7206E72CD00D85306 /* tab_about_small.png */,
+				C3FF06E4206B80160091C50D /* delete_icon.png */,
+				C3FF06E0206B7B880091C50D /* checked_icon.png */,
+				C3FF06E1206B7B890091C50D /* unchecked_icon.png */,
+				C3085F622068DC540007E2AF /* noimage.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C38DD57E2068F1C100F3B40C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C38DD57F2068F1C100F3B40C /* AuthService.swift */,
+				C38DD5812068F81700F3B40C /* IngredientModel.swift */,
+				C38DD5832068F83400F3B40C /* RecipeModel.swift */,
+				C3FFAB06206A8D5C00056C0B /* GlobData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3FF06E6206B90F70091C50D /* Ingredients */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F522068C7470007E2AF /* IngredientsViewController.swift */,
+				C3085F592068CBCF0007E2AF /* NewIngredientViewController.swift */,
+				C3FF06E8206B91430091C50D /* SearchResultViewController.swift */,
+			);
+			path = Ingredients;
+			sourceTree = "<group>";
+		};
+		C3FF06E7206B91100091C50D /* MyRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				C3085F542068C75D0007E2AF /* MyRecipesViewController.swift */,
+				C3085F5B2068CC8C0007E2AF /* NewRecipeViewController.swift */,
+				C38DD585206901BA00F3B40C /* SelectIngredientsViewController.swift */,
+			);
+			path = MyRecipes;
+			sourceTree = "<group>";
+		};
+		FDEB0D5C932F83D2EFC1C2B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0770DB8BE034CA735CCF912 /* Pods_MyFridge.framework */,
+				87AA26D46E41AAFCC0471990 /* Pods_MyFridgeTests.framework */,
+				55F73E0FD388FE1083045DBC /* Pods_MyFridgeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3085F09206845780007E2AF /* MyFridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3085F32206845790007E2AF /* Build configuration list for PBXNativeTarget "MyFridge" */;
+			buildPhases = (
+				95F869C148C5A9E4836798EF /* [CP] Check Pods Manifest.lock */,
+				C3085F06206845780007E2AF /* Sources */,
+				C3085F07206845780007E2AF /* Frameworks */,
+				C3085F08206845780007E2AF /* Resources */,
+				755E74359BE25A39FB1CAEAA /* [CP] Embed Pods Frameworks */,
+				963BA65013A7F46646E105DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFridge;
+			productName = MyFridge;
+			productReference = C3085F0A206845780007E2AF /* MyFridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3085F1D206845790007E2AF /* MyFridgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3085F35206845790007E2AF /* Build configuration list for PBXNativeTarget "MyFridgeTests" */;
+			buildPhases = (
+				83F98F8B218D0BD3205E1950 /* [CP] Check Pods Manifest.lock */,
+				C3085F1A206845790007E2AF /* Sources */,
+				C3085F1B206845790007E2AF /* Frameworks */,
+				C3085F1C206845790007E2AF /* Resources */,
+				8C309D88EE15F18B25A8B322 /* [CP] Embed Pods Frameworks */,
+				B45AF5D5CD2FC14074463536 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3085F20206845790007E2AF /* PBXTargetDependency */,
+			);
+			name = MyFridgeTests;
+			productName = MyFridgeTests;
+			productReference = C3085F1E206845790007E2AF /* MyFridgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3085F28206845790007E2AF /* MyFridgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3085F38206845790007E2AF /* Build configuration list for PBXNativeTarget "MyFridgeUITests" */;
+			buildPhases = (
+				0CAB0B55CA46A645E448188C /* [CP] Check Pods Manifest.lock */,
+				C3085F25206845790007E2AF /* Sources */,
+				C3085F26206845790007E2AF /* Frameworks */,
+				C3085F27206845790007E2AF /* Resources */,
+				787F54F34D223718381EE897 /* [CP] Embed Pods Frameworks */,
+				A891AA50650C1FD9FB3126C5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3085F2B206845790007E2AF /* PBXTargetDependency */,
+			);
+			name = MyFridgeUITests;
+			productName = MyFridgeUITests;
+			productReference = C3085F29206845790007E2AF /* MyFridgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3085F02206845780007E2AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Administrator;
+				TargetAttributes = {
+					C3085F09206845780007E2AF = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					C3085F1D206845790007E2AF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3085F09206845780007E2AF;
+					};
+					C3085F28206845790007E2AF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3085F09206845780007E2AF;
+					};
+				};
+			};
+			buildConfigurationList = C3085F05206845780007E2AF /* Build configuration list for PBXProject "MyFridge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3085F01206845780007E2AF;
+			productRefGroup = C3085F0B206845780007E2AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3085F09206845780007E2AF /* MyFridge */,
+				C3085F1D206845790007E2AF /* MyFridgeTests */,
+				C3085F28206845790007E2AF /* MyFridgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3085F08206845780007E2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C33A1DCC206CC04300FA8B6D /* icon_40.png in Resources */,
+				C3FF06EE206BD1390091C50D /* tab_fridge_small.png in Resources */,
+				C33A1DCB206CC04300FA8B6D /* icon_200.png in Resources */,
+				C3085F632068DC540007E2AF /* noimage.png in Resources */,
+				C3085F18206845790007E2AF /* LaunchScreen.storyboard in Resources */,
+				C3FF06E2206B7B890091C50D /* checked_icon.png in Resources */,
+				C3085F3E206866580007E2AF /* GoogleService-Info.plist in Resources */,
+				C3FF06EF206BD1390091C50D /* tab_home_small.png in Resources */,
+				C3085F15206845790007E2AF /* Assets.xcassets in Resources */,
+				C3FF06E5206B80160091C50D /* delete_icon.png in Resources */,
+				C3FF06ED206BD1390091C50D /* tab_recipes_small.png in Resources */,
+				C3085F13206845790007E2AF /* Main.storyboard in Resources */,
+				C3D35EDA206E790A00D85306 /* mff_logo.png in Resources */,
+				C3FF06E3206B7B890091C50D /* unchecked_icon.png in Resources */,
+				C3D35ED8206E72CE00D85306 /* tab_about_small.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3085F1C206845790007E2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3085F27206845790007E2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CAB0B55CA46A645E448188C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFridgeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755E74359BE25A39FB1CAEAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyFridge/Pods-MyFridge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFridge/Pods-MyFridge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		787F54F34D223718381EE897 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFridgeUITests/Pods-MyFridgeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83F98F8B218D0BD3205E1950 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFridgeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C309D88EE15F18B25A8B322 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyFridgeTests/Pods-MyFridgeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFridgeTests/Pods-MyFridgeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F869C148C5A9E4836798EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFridge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		963BA65013A7F46646E105DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFridge/Pods-MyFridge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A891AA50650C1FD9FB3126C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFridgeUITests/Pods-MyFridgeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B45AF5D5CD2FC14074463536 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFridgeTests/Pods-MyFridgeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3085F06206845780007E2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3085F5E2068CDEC0007E2AF /* LoginNavController.swift in Sources */,
+				C3085F552068C75D0007E2AF /* MyRecipesViewController.swift in Sources */,
+				C3085F472068C61D0007E2AF /* LoginViewController.swift in Sources */,
+				C3085F10206845790007E2AF /* ViewController.swift in Sources */,
+				C3085F5C2068CC8C0007E2AF /* NewRecipeViewController.swift in Sources */,
+				C38DD5842068F83400F3B40C /* RecipeModel.swift in Sources */,
+				C3085F572068C76D0007E2AF /* SearchViewController.swift in Sources */,
+				C3FFAB07206A8D5C00056C0B /* GlobData.swift in Sources */,
+				C3085F492068C62C0007E2AF /* SignupViewController.swift in Sources */,
+				C3085F4B2068C6C70007E2AF /* TabbarViewController.swift in Sources */,
+				C3085F5A2068CBCF0007E2AF /* NewIngredientViewController.swift in Sources */,
+				C3085F532068C7470007E2AF /* IngredientsViewController.swift in Sources */,
+				C3085F0E206845790007E2AF /* AppDelegate.swift in Sources */,
+				C3085F602068CEAB0007E2AF /* AboutViewController.swift in Sources */,
+				C3085F4D2068C6E00007E2AF /* HomeViewController.swift in Sources */,
+				C38DD5802068F1C200F3B40C /* AuthService.swift in Sources */,
+				C38DD586206901BA00F3B40C /* SelectIngredientsViewController.swift in Sources */,
+				C3FF06E9206B91430091C50D /* SearchResultViewController.swift in Sources */,
+				C38DD5822068F81700F3B40C /* IngredientModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3085F1A206845790007E2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3085F23206845790007E2AF /* MyFridgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3085F25206845790007E2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3085F2E206845790007E2AF /* MyFridgeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3085F20206845790007E2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3085F09206845780007E2AF /* MyFridge */;
+			targetProxy = C3085F1F206845790007E2AF /* PBXContainerItemProxy */;
+		};
+		C3085F2B206845790007E2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3085F09206845780007E2AF /* MyFridge */;
+			targetProxy = C3085F2A206845790007E2AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3085F11206845790007E2AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3085F12206845790007E2AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3085F16206845790007E2AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3085F17206845790007E2AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3085F30206845790007E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3085F31206845790007E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3085F33206845790007E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DB4A4BCFBFEC045514C92B /* Pods-MyFridge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8ESPV6MVC;
+				INFOPLIST_FILE = MyFridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topmobile.MyFridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFridge/MyFridge-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3085F34206845790007E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEF0AECB427264E7473BE44 /* Pods-MyFridge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8ESPV6MVC;
+				INFOPLIST_FILE = MyFridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.topmobile.MyFridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFridge/MyFridge-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3085F36206845790007E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF00FE0800A0DA5D5D0C70E9 /* Pods-MyFridgeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.MyFridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFridge.app/MyFridge";
+			};
+			name = Debug;
+		};
+		C3085F37206845790007E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 772D41BBD2AE7FC55A54F610 /* Pods-MyFridgeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFridgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.MyFridgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFridge.app/MyFridge";
+			};
+			name = Release;
+		};
+		C3085F39206845790007E2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 398CC0B39C7CEE343BC46351 /* Pods-MyFridgeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.MyFridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyFridge;
+			};
+			name = Debug;
+		};
+		C3085F3A206845790007E2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E7232CF12D1981973402AC5 /* Pods-MyFridgeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFridgeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.admin.MyFridgeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyFridge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3085F05206845780007E2AF /* Build configuration list for PBXProject "MyFridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3085F30206845790007E2AF /* Debug */,
+				C3085F31206845790007E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3085F32206845790007E2AF /* Build configuration list for PBXNativeTarget "MyFridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3085F33206845790007E2AF /* Debug */,
+				C3085F34206845790007E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3085F35206845790007E2AF /* Build configuration list for PBXNativeTarget "MyFridgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3085F36206845790007E2AF /* Debug */,
+				C3085F37206845790007E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3085F38206845790007E2AF /* Build configuration list for PBXNativeTarget "MyFridgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3085F39206845790007E2AF /* Debug */,
+				C3085F3A206845790007E2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3085F02206845780007E2AF /* Project object */;
+}
