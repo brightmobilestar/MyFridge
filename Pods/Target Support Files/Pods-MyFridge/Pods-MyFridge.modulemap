@@ -1,0 +1,6 @@
+framework module Pods_MyFridge {
+  umbrella header "Pods-MyFridge-umbrella.h"
+
+  export *
+  module * { export * }
+}
